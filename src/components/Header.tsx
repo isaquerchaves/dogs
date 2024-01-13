@@ -1,13 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
+import Dogs from '../Assets/dogs.svg';
 
 const Header: React.FC = () => {
     return (
-        <div className={styles.header}>
-            <Link to="/">Home</Link>
-            <Link to="/login">Login / Criar</Link>
-        </div>
+        <header className={styles.header}>
+            <nav className={`${styles.nav} container`}>
+                <Link className={styles.logo} aria-label="Dogs - Home" to="/">
+                    <img src={Dogs} alt="Dogs Logo" />
+                </Link>
+                <Link className={styles.login} to="/login">Login / Criar</Link>
+            </nav>
+        </header>
     );
 };
 
