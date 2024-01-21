@@ -9,7 +9,7 @@ import styles from "./LoginForm.module.css";
 import stylesBtn from "../Forms/Button.module.css";
 
 const LoginForm = () => {
-    const username = useForm('email');
+    const username = useForm('username');
     const password = useForm('password');
 
     const { userLogin, error, loading }: any = React.useContext(UserContext);
