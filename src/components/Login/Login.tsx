@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import LoginForm from "./LoginForm";
-import LoginCreate from "./LoginCreate";
-import LoginPasswordLost from "./LoginPasswordLost";
-import LoginPasswordReset from "./LoginPasswordReset";
+import LoginForm from "./LoginForm/LoginForm";
+import LoginCreate from "./LoginCreate/LoginCreate";
+import LoginPasswordLost from "./LoginPasswordLost/LoginPasswordLost";
+import LoginPasswordReset from "./LoginPasswordReset/LoginPasswordReset";
 import React from "react";
 import { UserContext } from "../../UserContext";
 import styles from "./Login.module.css";
