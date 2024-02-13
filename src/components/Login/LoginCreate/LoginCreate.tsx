@@ -1,9 +1,9 @@
 import React from "react";
-import useForm from "../../Hooks/useForm";
-import { UserContext } from "../../UserContext";
-import { USER_POST } from "../../api";
-import Button from "../Forms/Button";
-import Input from "../Forms/Input";
+import useForm from "../../../Hooks/useForm";
+import { UserContext } from "../../../UserContext";
+import { USER_POST } from "../../../api";
+import Button from "../../Forms/Button/Button";
+import Input from "../../Forms/Input/Input";
 
 const LoginCreate = () => {
     const username = useForm('username');
